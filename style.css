@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+ 
+label{
+    position: absolute;
+    right: 80px;
+    height: 30px;
+    width: 100px;
+    font-weight: 600;
+    font-size: large;
+    float: right;
+    z-index: 1111;
+}
+
+/* Menu Section starts here */
+
+.mainMenu{
+    transition: all 0.5s ease-out;
+    position: fixed;
+    width: calc(100vw - 2vw);
+    margin: 0 5px ; 
+    top: 60px;
+    color: white;
+    float: left;
+    display: none;
+    background-color: grey;
+    border-radius: 10px;
+    z-index: 1111;
+    opacity: 0.5;
+}
+ul li a{
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    margin: 10px 0 0 50px;
+    height: 25px;
+}
+ul li{
+    padding: 10px;
+    margin: 10px 0 0 50px;
+    height: 25px;
+}
+
+.left{
+    position: relative;
+    display: flex;
+    height:50px ;
+    width: 70%;
+}
+.right{
+    position: relative;
+    width: 30%;
+    /* color: rgb(46, 42, 42); */
+    height: auto;
+}
+.right a {
+    color: white;
+    font-size: 20px;
+    margin: 2px;
+    background-color: burlywood;
+    z-index: 1111;
+    padding: 1rem;
+    border-radius: 100%;
+    border-style: none;
+}
+.right a i{
+    color: white;
+    z-index: 1111;
+}
+i{
+    margin: 3px;
+    border-style: none;
+    width: 20px;
+}
+button{
+    padding-left: -20px;
+}
+.logo{
+    position: relative;
+    height: 50px;
+    width: 200px;
+    margin-left: 100px;
+}
+#checkbox{
+    display: none;
+}
+#checkbox:checked ~ .mainMenu{
+    transition: all 0.5s ease-out;
+    display: block;
+    height: 500px;
+}
+#checkbox:checked ~ nav{
+    height: 550px;
+}
+
+/* Second Section is for Home Option */
+
+.home{
+    top: 60px;
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    background-color: silver;
+    padding-top: 200px;
+    opacity: 0.8;
+    font-size: large;
+}
+.btns{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* Second Section is for About Option */
+
+.about{
+    width: 100vw;
+    height: 85vh;
+    opacity: 0.8;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4qpUo?ver=fc80&q=90&h=675&w=830&b=%23FFFFFFFF&aim=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.firsthalf{
+    width: 50vw;
+    height: 100%;
+    opacity: 0.9;
+    background-color: silver;
+}
+.about .leftcontent{
+    padding-top: 200px;
+}
+.secondhalf{
+    width: 50%;
+    height: 100%;
+}
+.about button{
+    margin-left: -450px;
+
+}
+.about .firsthalf .bigletter{
+    color: black;
+}
+.about .firsthalf .mediumletter{
+    color: white;
+    opacity: 1;
+}
+
+/* Thired section is for Product option */
+
+.product{
+    position: relative;
+    background-color: rgb(248, 245, 246);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    
+}
+.p_main{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 2em;
+    background-color: rgb(248, 245, 246);
+    overflow: scroll;
+}
+.p_sect1{
+    position: relative;
+    width: 36%;
+    height: 100%;
+    font-style: inherit;
+    margin-left: 12%;
+    margin-top: 38px;
+    padding-bottom: 1rem;
+}
+.p_sect1_content p{
+  margin: 10px;
+}
+.p_sect2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100%;
+    font-style: inherit;
+    top: -20px;
+}
+.p_tag{
+    margin-top: 4rem;
+    width: fit-content;
+    display: flex;
+    /* background-color: rgba(255,255,255,0.7); */
+    top: 3em;
+}
+.p_tag i:hover{
+    background-color: linear-gradient(500,300,200);
+}
+.p_tag_background{
+    position: relative;
+    width: 3rem;
+    height: 5rem;
+    color: white;
+    background-color: pink;
+    padding: 1rem;
+    margin: 2px 1rem;
+    border-radius: 100%;
+    height: auto;
+}
+.p_sect2 i{
+    font-size: 250%;
+}
+.p_sect3{
+    position: relative;
+    box-sizing: border-box;
+    width: 36%;
+    height: 100%;
+    font-style: inherit;
+    margin-right: 12%;
+    margin-top: 38px;
+}
+.p_sect3_content p{
+    margin: 10px;
+    width: auto;
+  }
+
+  /* Forth Section is for Events  */
+
+  .events{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    padding: 2%;
+    flex-direction: column;
+    background:no-repeat url("https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297__340.jpg");
+    background-size: cover;
+    opacity: 0.9;
+}
+.e_mainbox{
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    margin: 2%;
+    width: 90vw;
+    height: fit-content;
+   /* background-color: aqua; */
+   justify-content: center;
+}
+.e_container{
+    /* overflow: hidden; */
+    display: flex;
+    position: relative;
+    margin: 4.5%;
+    width: 27vw;
+    height: fit-content;
+    /* background-color: black; */
+    opacity: 0.8;
+}
+.e_card{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: auto ;
+    height: fit-content;
+    margin: 2% 1vw;
+    /* background-color: rebeccapurple; */
+    opacity: 0.8;
+    object-fit: cover;
+    transition: all ease-out 0.5s;
+}
+.e_cardcontent{
+    margin: 1rem;    
+    padding: 1%;
+    width: 25vw;
+    height: auto;
+    opacity: 0.9;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    object-fit: cover;
+    position: relative;
+}
+.e_cardcontent i{
+    color: white;
+    font-weight: 100;
+    margin-left: -100px;
+    float: bottom;
+    opacity: 0.8;
+    padding-top: 2%;
+}
+.e_cardcontent h2{
+    font-size: 1.3rem;
+    
+}
+.e_cardcontent span i{
+    position: relative;
+    bottom: 5px;
+    font-weight: bold;
+    margin: 2rem;
+}
+.card_bold{
+    margin: auto;    
+    padding: 1%;
+    width: 27vw;
+    opacity: 1;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.card_bold span i{
+    position: relative;
+    bottom: 5px;
+    font-weight: bold;
+    margin-top: 3vw;
+    height: fit-content;
+}
+.card_bold i{
+    color: white;
+    font-weight: 100;
+    margin-left: -100px;
+    height: fit-content;
+
+    float: bottom;
+    opacity: 1;
+    padding-top: 2%;
+}
+.e_base{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    float: bottom;
+    margin-top: auto;
+    height: 10px;
+}
+.e_base i{
+    filter: invert(1);
+    border-radius: 100%;
+    font-size: 2rem;
+}
+.e_base i:hover , i:active{
+    cursor: pointer;
+    background-color: black;
+}
+.e_move:target .e_cardcontent{
+    color: white;
+    font-weight: 100;
+    margin: auto;
+    float: bottom;
+    opacity: 1;
+    padding-top: 2%;
+    border: 2px solid white;
+}
+ /* Fifth Section is for Calenders  */
+.calender{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+}
+.calender .header{
+    margin: 4rem auto 1rem -30rem;
+    color: black;
+}
+.c_mainbox{
+    position: relative;    
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    /* background-color: burlywood; */
+}
+.c_event{
+    display: flex;
+    margin: 2rem 0;
+}
+.c_event_left{
+    margin: 0 2rem 0 5rem;
+}
+.c_event_right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: coral; */
+}
+ /* Sixth Section is for blogs  */
+
+.blog{
+    position: relative;
+    background-color: rgb(219, 213, 214);
+    width: 100vw;
+    height: auto;
+}
+.b_mainbox{
+    position: relative;
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.b_card{
+    box-sizing: border-box;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    height: 28vw;
+    margin: 2% 1.5vw;
+    background-color: burlywood;
+    opacity: 0.8;
+}
+.b_card_image{
+    object-fit: cover;
+    width: auto;
+    height: auto;
+}
+.b_image{
+    object-fit: cover;
+    background-color: burlywood;
+
+}
+.b_card_info{
+    position: relative;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+}
+.b_card_date{
+    position: relative;
+    padding: 1rem;
+    margin: -3px 0  25%   ;
+    width: auto;
+    background-color: burlywood;
+    height: 5rem;   
+}
+.b_card_news{
+    position: relative;
+    padding: 1rem;
+    margin: -3px 0  0  0 ;
+    width: auto;
+    background-color: whitesmoke;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.b_card p {
+    text-align: start;
+    align-self: center;
+    margin: 5px;
+    color: rgb(43, 42, 42);
+    
+}
+
+/* Sixth Section is for blogs  */
+
+.contact{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 30vw;
+    background-color: black;
+    opacity: 0.9;
+    justify-content: center;
+    text-align: center;
+}
+.cont_base{
+    position: relative;
+    display: flex;
+    height: 5rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: blanchedalmond;
+    margin: 1em;
+}
+.cont_base p{
+    margin: 1em;
+}

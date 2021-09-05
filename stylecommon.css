@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav{
+    position: fixed; 
+    display: flex;
+    top: 0;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.9;
+    z-index: 1111;
+} 
+ a:hover {
+    background-color: linear-gradient(yellow,red);
+    color: black;
+    border-radius: 7px;
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}
+.header{
+    position: relative;
+    height: fit-content;
+    text-align: center;
+    width: 100vw;
+    padding: 0.3rem;
+    margin-top: 20px;
+}
+h1{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+.blackheading{
+    margin-top: 8px;
+    padding: 8px;
+    align-items: center;
+    font-size: 27px;
+    color:black;
+    font-weight: bold;
+}
+.centeritem{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.rightitem{
+    float: right;
+    text-align: justify;
+    position: relative;
+    margin-right: 0 ;
+    padding: 7px 3px 7px 15px;
+    /* letter-spacing: inherit; */
+}
+.leftitem{
+    float: left;
+    text-align: justify;
+    position: relative;
+    margin-left: 0;
+    padding: 7px 15px 7px 1px;
+
+}
+.pinksubheading{
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 8px;
+    font-size: 23px;
+    align-items: center;
+    color:pink;
+}
+.bigletter{
+    margin-top: 8px;
+    padding: 8px;
+    align-items: center;
+    font-size: 27px;
+    color:white;
+    font-weight: bold;
+}
+.mediumletter{
+    font-weight: bold;
+    margin-top: 2px;
+    padding: 5px;
+    font-size: 23px;
+    align-items: center;
+    color:black;
+}
+.smallletter{
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 8px;
+    font-size: 15px;
+    align-items: center;
+    color:pink          ;
+}
+.btn{
+    padding: 2px;
+    margin: 2px;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    background-color: burlywood;
+    color: white;
+    font-size: small;
+}
+input{
+    padding: 0px;
+    margin-right: -9px;
+    width: 15rem;
+    height: 40px;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    font-size: small;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}

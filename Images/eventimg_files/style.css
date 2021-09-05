@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+ 
+label{
+    position: absolute;
+    right: 80px;
+    height: 30px;
+    width: 100px;
+    font-weight: 600;
+    font-size: large;
+    float: right;
+    z-index: 1111;
+}
+.mainMenu{
+    transition: all 0.5s ease-out;
+    position: fixed;
+    width: calc(100vw - 2vw);
+     margin: 0 5px ; 
+    top: 60px;
+    color: white;
+    float: left;
+    display: none;
+    background-color: black;
+    border-radius: 10px;
+    z-index: 1111;
+    opacity: 0.5;
+}
+ul li a{
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    margin: 10px 0 0 50px;
+    height: 25px;
+}
+ul li{
+    padding: 10px;
+    margin: 10px 0 0 50px;
+    height: 25px;
+}
+
+.left{
+    position: relative;
+    display: flex;
+    height:50px ;
+    width: 70%;
+}
+.right{
+    position: relative;
+    width: 30%;
+    color: rgb(46, 42, 42);
+    height: auto;
+}
+.right a {
+    color: white;
+    font-size: 20px;
+    margin: 2px;
+    background-color: burlywood;
+    padding: 15px;
+    border-radius: 100%;
+    border-style: none;
+}
+i{
+    margin: 3px;
+    border-style: none;
+    width: 20px;
+}
+button{
+    padding-left: -20px;
+}
+.logo{
+    position: relative;
+    height: 50px;
+    width: 200px;
+    margin-left: 100px;
+}
+#checkbox{
+    display: none;
+}
+#checkbox:checked ~ .mainMenu{
+    transition: all 0.5s ease-out;
+    display: block;
+    height: 500px;
+}
+#checkbox:checked ~ nav{
+    height: 550px;
+}
+.home{
+    top: 60px;
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    background-color: silver;
+    padding-top: 200px;
+    opacity: 0.8;
+    font-size: large;
+}
+.btns{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.about{
+    width: 100vw;
+    height: 85vh;
+    opacity: 0.8;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4qpUo?ver=fc80&q=90&h=675&w=830&b=%23FFFFFFFF&aim=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.firsthalf{
+    width: 50vw;
+    height: 100%;
+    opacity: 0.9;
+    background-color: silver;
+}
+.about .leftcontent{
+    padding-top: 200px;
+}
+.secondhalf{
+    width: 50%;
+    height: 100%;
+}
+.about button{
+    margin-left: -450px;
+
+}
+.about .firsthalf .bigletter{
+    color: black;
+}
+.about .firsthalf .mediumletter{
+    color: white;
+    opacity: 1;
+}
+.product{
+    position: relative;
+    background-color: rgb(248, 245, 246);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 700px;
+}
+.p_main{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 85%;
+}
+.p_sect1{
+    position: relative;
+    width: 36%;
+    height: 100%;
+    font-style: inherit;
+    margin-left: 12%;
+    margin-top: 38px;
+}
+.p_sect1_content p{
+  margin: 10px;
+}
+.p_sect2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    height: 100%;
+    font-style: inherit;
+    top: -20px;
+}
+.p_tag{
+    margin: 43px 10px;
+}
+.p_tag_background{
+    position: relative;
+    width: 60px;
+    height: 130px;
+    color: white;
+    background-color: pink;
+    padding: 15px;
+    margin: 2px 20px;
+    border-radius: 100%;
+    height: auto;
+}
+.p_sect2 i{
+    font-size: 50px;
+}
+.p_sect3{
+    position: relative;
+    width: 36%;
+    height: 100%;
+    font-style: inherit;
+    margin-right: 12%;
+    margin-top: 38px;
+}
+.p_sect3_content p{
+    margin: 10px;
+  }
+.events{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background:no-repeat url("https://source.unsplash.com/1600x900/?nature,dark,green");
+    background-size: cover;
+}
